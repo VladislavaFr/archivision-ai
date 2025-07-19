@@ -1,78 +1,108 @@
-# ArchiVision.AI: AI-Powered Interior Design & Architecture Analysis
+# ArchiVision-AI
 
-ArchiVision.AI is a cutting-edge Python project that combines architecture, interior design, deep learning, and prompt engineering. Designed in collaboration with AI Open, this project aims to revolutionize how we approach residential and investment-based design.
+## Project Overview
 
-##  Overview
+ArchiVision-AI is an advanced AI-powered platform that reimagines architectural and interior design workflows. It integrates deep learning, computer vision, and generative models to assist designers, architects, and investors in planning, visualizing, and evaluating real estate and interior projects.
 
-This project uses real-time AI techniques to:
-- Analyze architectural plans and optimize interior layouts
-- Generate photorealistic interior visualizations using AI
-- Match designs to user budgets, needs, and regional styles
-- Predict material costs and renovation expenses
-- Suggest design decisions based on natural light analysis, cultural aesthetics, and user preferences
-- Create presentation-ready investment concepts
+The project covers full-cycle automation: from collecting contextual location data to generating customized 3D interiors with budget-aware recommendations and future-ready design tools, including VR/AR and AI-based assistants.
 
-## Features
+## Key Features
 
--  Deep Learning: Predicts layout efficiency, lighting performance, and renovation costs.
--  Interior AI Visuals: Generate stunning photorealistic renderings using prompt-engineered AI models.
--  Data-Driven Budgets: Calculates real-world renovation costs and visualizes allocation by room/zone.
--  Cultural Adaptation: Supports user input for religion, region, or specific investor taste (e.g., Arabic motifs, European minimalism, etc.)
--  Investment Scenarios: Automatically assembles a PDF or pitch deck for investors based on selected variables.
+- Automated Location Data Collection  
+  Integration with OpenStreetMap and Google Maps to fetch geospatial, environmental, and zoning data for accurate site analysis.
 
-## Technologies
+- Image Classification for Interior Design  
+  Custom datasets of interior styles and room types used to train models for design classification and moodboard generation.
 
-- Python 3.11+
-- Pandas, NumPy
-- Scikit-learn, TensorFlow (or PyTorch)
-- Matplotlib, Seaborn, Plotly
-- OpenAI API / Midjourney / Stable Diffusion (via integration)
-- Custom prompt-engineering framework
-- Streamlit / Gradio (for UI prototype)
+- Generative AI for Visual Concepts  
+  Use of Stable Diffusion (or similar) for generating tailored interior renders based on client preferences, prompts, and constraints.
+
+- AI Cost Estimation & Budget Flexibility  
+  Dynamic AI modules that estimate renovation or construction costs based on region, style, and size — adaptable to different budget levels.
+
+- VR/AR Walkthroughs  
+  Exportable scenes and models for immersive virtual experiences to evaluate spatial arrangements and materials.
+
+- AI Design Assistant  
+  An interactive AI chatbot that assists with style decisions, prompt generation, spatial tips, and code-based automation of design tasks.
+
+- Investment-Focused Module  
+  Suitable for pitching projects to investors by generating visual, financial, and spatial documentation with minimal input.
 
 ## Installation
-
-1. Clone the repo:
-git clone https://github.com/yourusername/archivision-ai.git
+# 1. Clone the repository
+git clone https://github.com/VladislavaFr/archivision-ai.git
 cd archivision-ai
 
-2. Install dependencies with Poetry:
-poetry install
-poetry run python src/main.py
+# 2. Create and activate a virtual environment
+python -m venv venv
+# On Unix/macOS:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
 
 ## Usage
 
-- Use CLI or Streamlit UI to input:
-  - Layout plan
-  - Desired style keywords
-  - Region & religion
-  - Budget
-- Let the AI generate:
-  - Layout optimization
-  - Moodboards and rendered rooms
-  - Budget estimates by room
-  - Investor-ready visuals and reports
+- Data Collection  
+  Run src/data_collector.py to automatically collect and structure spatial and contextual data.
+
+- Dataset Preparation  
+  Use folder structure data/{style}/{room_type} to store images. Parser available for automated collection.
+
+- Model Training  
+  Train classifiers or generative models using prepared datasets. Launch training from src/train.py.
+
+- Prompt Engineering Tools  
+  Access Jupyter notebooks in notebooks/ to test prompt generation for generative models.
+
+- Visualization & Export  
+  Generated interiors are stored in output/ and can be converted into VR-ready formats.
 
 ## Project Structure
 archivision-ai/
+├── data/                # Image datasets (excluded from repo)
+│   ├── contemporary/
+│   ├── wabi-sabi/
+│   └── etc.
+├── src/                 # Python source code
+│   ├── data_collector.py
+│   ├── train.py
+│   ├── generator.py
+│   └── prompts.py
+├── notebooks/           # Jupyter notebooks
+├── tests/               # Unit and integration tests
+├── output/              # Generated images and models
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── LICENSE
 
- src/
-    data.py          # Data loading & preprocessing
-    model.py         # Deep learning model
-    visualizer.py    # Budget and layout visuals
-    prompts.py       # Prompt generator for AI renderings
-    main.py          # Project entry point
+## Collaboration
 
- assets/              # Rendered images and visualizations
- reports/             # Investor decks, PDFs
- data/                # Input sample datasets
- README.md
- pyproject.toml
+This project is developed by Vladislava Fridmann in collaboration with OpenAI tools and models. It’s an open research and development initiative focused on real-world architecture and AI integration.
 
-## License
+We welcome contributions in data science, architecture, generative AI, or UI/UX development.
 
-This project is licensed under the MIT License. You're free to use and adapt it.
+## Future Development
 
-## Disclaimer
+- Expand API support for location analytics (e.g., zoning, terrain).
+- Integration with 3D modeling tools (Blender, Unreal Engine).
+- Cloud deployment of the AI assistant for real-time consulting.
+- GAN-based upscaling and material prediction.
+- Style transfer between real and generated interiors.
 
-This project was created as a collaboration with AI Open and represents a fusion of architectural expertise and artificial intelligence. It is intended for research, design experimentation, and future-forward investor planning. All AI-generated visuals are for concept purposes only.
+## Legal & Licensing
+
+All code in this repository is published under the MIT License. Image datasets used for training are collected for educational and research purposes and are not distributed with the repository.
+If you use your own datasets, ensure compliance with data rights and licensing.
+
+## Contact
+
+If you have questions, ideas, or want to collaborate — feel free to [open an issue](https://github.com/VladislavaFr/archivision-ai/issues) or submit a pull request.
+
+---
+
+Developed by Vladislava Fridmann using OpenAI technologies
