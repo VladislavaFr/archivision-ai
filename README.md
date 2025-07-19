@@ -1,110 +1,78 @@
-# ArchiAI: Intelligent Architectural & Interior Design Assistant
+# ArchiVision.AI: AI-Powered Interior Design & Architecture Analysis
 
-## Overview
+ArchiVision.AI is a cutting-edge Python project that combines architecture, interior design, deep learning, and prompt engineering. Designed in collaboration with AI Open, this project aims to revolutionize how we approach residential and investment-based design, especially for budget-conscious users.
 
-ArchiAI is a cutting-edge AI-powered platform combining deep learning, data analysis, and prompt engineering to revolutionize architectural and interior design workflows. This project leverages state-of-the-art neural networks to generate optimized layouts, budget-conscious solutions, and realistic visualizations, tailored to unique client needs — from compact urban apartments to luxury villas and specialized spaces.
+##  Overview
 
-Developed in collaboration with AI Open, ArchiAI aims to push the boundaries of design automation and creative assistance.
-
----
+This project uses real-time AI techniques to:
+- Analyze architectural plans and optimize interior layouts
+- Generate photorealistic interior visualizations using AI
+- Match designs to user budgets, needs, and regional styles
+- Predict material costs and renovation expenses
+- Suggest design decisions based on natural light analysis, cultural aesthetics, and user preferences
+- Create presentation-ready investment concepts
 
 ## Features
 
-- AI-Driven Space Optimization: Automatically generate efficient, functional floor plans based on user inputs, budget, and spatial constraints.
-- Realistic Visualizations: Produce photorealistic 3D renders of interiors using generative models.
-- Budget-Aware Design: Customize design proposals within specified financial limits.
-- Contextual & Cultural Sensitivity: Integrate cultural and religious design elements, e.g., Islamic architectural symbolism.
-- Floral School Case Study: Specialized module to design a floristic school for Dubai, integrating client preferences and local constraints.
-- Prompt Engineering Interface: Enable designers to customize AI behavior via natural language prompts for maximum creativity and control.
-- Deep Learning Backbone: Employ advanced neural networks trained on architectural datasets for superior performance.
+-  Deep Learning: Predicts layout efficiency, lighting performance, and renovation costs.
+-  Interior AI Visuals: Generate stunning photorealistic renderings using prompt-engineered AI models.
+-  Data-Driven Budgets: Calculates real-world renovation costs and visualizes allocation by room/zone.
+-  Cultural Adaptation: Supports user input for religion, region, or specific investor taste (e.g., Arabic motifs, Eastern European minimalism, etc.)
+-  Investment Scenarios: Automatically assembles a PDF or pitch deck for investors based on selected variables.
 
----
+## Technologies
 
-## Technology Stack
-
-- Python 3.11
-- TensorFlow / PyTorch (Deep Learning Framework)
-- OpenAI API (for prompt engineering and NLP tasks)
-- Pandas, NumPy (Data processing)
-- Scikit-learn (Data analysis & modeling)
-- Blender / Unreal Engine (optional for 3D rendering integration)
-- Flask / FastAPI (Web API for interactive UI)
-- Docker (Containerization)
-
----
+- Python 3.11+
+- Pandas, NumPy
+- Scikit-learn, TensorFlow (or PyTorch)
+- Matplotlib, Seaborn, Plotly
+- OpenAI API / Midjourney / Stable Diffusion (via integration)
+- Custom prompt-engineering framework
+- Streamlit / Gradio (for UI prototype)
 
 ## Installation
-git clone https://github.com/yourusername/ArchiAI-Intelligent-Architectural-Interior-Design-Assistant.git
-cd ArchiAI-Intelligent-Architectural-Interior-Design-Assistant
+
+1. Clone the repo:
+git clone https://github.com/yourusername/archivision-ai.git
+cd archivision-ai
+
+2. Install dependencies with Poetry:
 poetry install
 poetry run python src/main.py
 
----
-
 ## Usage
 
-1. Prepare your input parameters (space size, budget, cultural preferences).
-2. Run the AI assistant to generate layout and visualization suggestions.
-3. Adjust prompts via the prompt engineering module to refine results.
-4. Export final designs and reports for clients or investors.
-
----
+- Use CLI or Streamlit UI to input:
+  - Layout plan
+  - Desired style keywords
+  - Region & religion
+  - Budget (e.g., $10,000 renovation or 1M RUB property)
+- Let the AI generate:
+  - Layout optimization
+  - Moodboards and rendered rooms
+  - Budget estimates by room
+  - Investor-ready visuals and reports
 
 ## Project Structure
-ArchiAI-Intelligent-Architectural-Interior-Design-Assistant/
-│
-├── src/
-│   ├── data/                 # Data loading and preprocessing
-│   ├── models/               # Deep learning models and training scripts
-│   ├── visualization/        # Rendering and visualization utilities
-│   ├── prompt_engineering/   # Modules for prompt generation and customization
-│   ├── api/                  # Web API endpoints
-│   └── main.py               # Entry point
-│
-├── tests/                    # Unit and integration tests
-├── docs/                     # Documentation
-├── examples/                 # Example input/output files
-├── Dockerfile                # Container setup
-└── README.md                 # Project documentation
+archivision-ai/
 
----
+ src/
+    data.py          # Data loading & preprocessing
+    model.py         # Deep learning model
+    visualizer.py    # Budget and layout visuals
+    prompts.py       # Prompt generator for AI renderings
+    main.py          # Project entry point
 
-## Team
-
-- Vladislava Fridmann — Lead Architect & Data Scientist  
-- AI Open — AI collaboration partner and co-developer  
-
----
-
-## Future Plans
-
-- Expand dataset with more architectural styles globally  
-- Integrate VR walkthroughs of generated spaces  
-- Implement user-friendly web-based UI  
-- Add multi-language support for prompt engineering  
-- Collaborate with real estate and design firms for pilot testing  
-
----
-
-## FAQ
-
-Q: Do I need a powerful GPU to run this?  
-A: Basic features can run on CPU, but GPU recommended for deep learning model training and rendering.
-
-Q: Is this open source?  
-A: Yes, under MIT License. Contributions welcome!
-
-Q: Can I use this for commercial projects?  
-A: Absolutely. Please cite this project if used.
-
----
+ assets/              # Rendered images and visualizations
+ reports/             # Investor decks, PDFs
+ data/                # Input sample datasets
+ README.md
+ pyproject.toml
 
 ## License
 
-MIT License © 2025 Vladislava Fridmann & AI Open
+This project is licensed under the MIT License. You're free to use and adapt it.
 
----
+## Disclaimer
 
-## Contact
-
-For questions, collaborations, or support, please open an issue on GitHub or contact: vladislava.fridmann1@aol.com
+This project was created as a collaboration with AI Open and represents a fusion of architectural expertise and artificial intelligence. It is intended for research, design experimentation, and future-forward investor planning. All AI-generated visuals are for concept purposes only.
