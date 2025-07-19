@@ -31,6 +31,7 @@ The project covers full-cycle automation: from collecting contextual location da
 
 ## Installation
 # 1. Clone the repository
+```
 git clone https://github.com/VladislavaFr/archivision-ai.git
 cd archivision-ai
 
@@ -43,7 +44,7 @@ venv\Scripts\activate
 
 # 3. Install dependencies
 pip install -r requirements.txt
-
+```
 ## Usage
 
 - Data Collection  
@@ -62,6 +63,7 @@ pip install -r requirements.txt
   Generated interiors are stored in output/ and can be converted into VR-ready formats.
 
 ## Project Structure
+```
 archivision-ai/
 ├── data/                # Image datasets (excluded from repo)
 │   ├── contemporary/
@@ -79,7 +81,7 @@ archivision-ai/
 ├── README.md
 ├── requirements.txt
 └── LICENSE
-
+```
 ## Collaboration
 
 This project is developed by Vladislava Fridmann in collaboration with OpenAI tools and models. It’s an open research and development initiative focused on real-world architecture and AI integration.
