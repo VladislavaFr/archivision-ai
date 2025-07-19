@@ -1,0 +1,112 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtualenv
+venv/
+.venv/
+ENV/
+env/
+.ENV/
+.env/
+
+# Poetry
+poetry.lock
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Logs
+*.log
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# Pydantic
+*.json
+
+# VSCode
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Model files
+*.pkl
+*.h5
+*.joblib
+
+# AI-generated images / datasets
+outputs/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.csv
+*.tsv
+
+# System
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Other editors
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Spyder
+.spyderproject
+.spyproject
