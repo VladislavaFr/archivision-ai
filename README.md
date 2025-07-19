@@ -1,6 +1,6 @@
 # ArchiVision.AI: AI-Powered Interior Design & Architecture Analysis
 
-ArchiVision.AI is a cutting-edge Python project that combines architecture, interior design, deep learning, and prompt engineering. Designed in collaboration with AI Open, this project aims to revolutionize how we approach residential and investment-based design, especially for budget-conscious users.
+ArchiVision.AI is a cutting-edge Python project that combines architecture, interior design, deep learning, and prompt engineering. Designed in collaboration with AI Open, this project aims to revolutionize how we approach residential and investment-based design.
 
 ##  Overview
 
@@ -17,7 +17,7 @@ This project uses real-time AI techniques to:
 -  Deep Learning: Predicts layout efficiency, lighting performance, and renovation costs.
 -  Interior AI Visuals: Generate stunning photorealistic renderings using prompt-engineered AI models.
 -  Data-Driven Budgets: Calculates real-world renovation costs and visualizes allocation by room/zone.
--  Cultural Adaptation: Supports user input for religion, region, or specific investor taste (e.g., Arabic motifs, Eastern European minimalism, etc.)
+-  Cultural Adaptation: Supports user input for religion, region, or specific investor taste (e.g., Arabic motifs, European minimalism, etc.)
 -  Investment Scenarios: Automatically assembles a PDF or pitch deck for investors based on selected variables.
 
 ## Technologies
