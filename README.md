@@ -46,7 +46,7 @@ poetry run python src/main.py
   - Layout plan
   - Desired style keywords
   - Region & religion
-  - Budget (e.g., $10,000 renovation or 1M RUB property)
+  - Budget
 - Let the AI generate:
   - Layout optimization
   - Moodboards and rendered rooms
