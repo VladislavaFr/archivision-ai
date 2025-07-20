@@ -30,20 +30,22 @@ The project covers full-cycle automation: from collecting contextual location da
   Suitable for pitching projects to investors by generating visual, financial, and spatial documentation with minimal input.
 
 ## Installation
-```
-# 1. Clone the repository
 
+# 1. Clone the repository
+```
 git clone https://github.com/VladislavaFr/archivision-ai.git
 cd archivision-ai
-
+```
 # 2. Create and activate a virtual environment
+```
 python -m venv venv
 # On Unix/macOS:
 source venv/bin/activate
 # On Windows:
 venv\Scripts\activate
-
+```
 # 3. Install dependencies
+```
 pip install -r requirements.txt
 ```
 ## Usage
