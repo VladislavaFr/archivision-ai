@@ -30,8 +30,9 @@ The project covers full-cycle automation: from collecting contextual location da
   Suitable for pitching projects to investors by generating visual, financial, and spatial documentation with minimal input.
 
 ## Installation
-# 1. Clone the repository
 ```
+# 1. Clone the repository
+
 git clone https://github.com/VladislavaFr/archivision-ai.git
 cd archivision-ai
 
